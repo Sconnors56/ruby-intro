@@ -29,7 +29,7 @@ end
 
 # Loop through tacos
 tacos = ["carnitas", "carne asada", "pollo"]
-
+# the "tacos" is the data set but you can define what you are looking for in the dataset
 # The old way:
 
 # puts "#{tacos[0]} tacos!"
@@ -44,7 +44,7 @@ index = 0
 # 2. begin the loop
 loop do
   # 3. stop loop if index has reached number of tacos in array
-  if index == tacos.size
+  if index == tacos.size # can also be count, length, etc.
     break
   end
 
@@ -54,7 +54,7 @@ loop do
   # 5. print taco using variable from step 4
   puts "#{taco} tacos!"
 
-  # 6. add 1 to index
+  # 6. add 1 to index (If you don't do this the index will always be 0, carnitas in this case)
   index = index + 1
 
   # 7. go back to beginning of loop
